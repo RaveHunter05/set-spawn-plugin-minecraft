@@ -1,0 +1,11 @@
+name: TeleportPlugin
+version: '${project.version}'
+main: me.ravehunter05.teleportplugin.TeleportPlugin
+api-version: 1.19
+authors: [ RaveHunter05 ]
+description: Plugin for teleport to another user in minecraft
+commands:
+  setspawn:
+    description: Set the server spawn point
+  spawn:
+    description: Spawns you at the spawn point
