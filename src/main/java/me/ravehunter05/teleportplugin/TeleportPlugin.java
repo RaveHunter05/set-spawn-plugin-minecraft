@@ -2,7 +2,6 @@ package me.ravehunter05.teleportplugin;
 
 import me.ravehunter05.teleportplugin.commands.SetSpawnCommand;
 import me.ravehunter05.teleportplugin.commands.SpawnCommand;
-import me.ravehunter05.teleportplugin.listeners.SpawnListeners;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class TeleportPlugin extends JavaPlugin {
@@ -14,8 +13,6 @@ public final class TeleportPlugin extends JavaPlugin {
 
         getCommand("setspawn").setExecutor(new SetSpawnCommand(this));
         getCommand("spawn").setExecutor(new SpawnCommand(this));
-
-        getServer().getPluginManager().registerEvents(new SpawnListeners(this), this);
     }
 
     @Override
